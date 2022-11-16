@@ -13,7 +13,8 @@
 <body>
 <form method = 'post' action='fileupload.jsp' enctype="multipart/form-data">
     <input type= 'file' name='photo'>
-    <input type= 'summit' name='upload'>
+
+    <input type= "Submit"  value="upload">
 </form>
 </body>
 </html>
