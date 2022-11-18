@@ -4,11 +4,12 @@ import java.util.Date;
 
 public class BoardVO {
 	private int seq;
-
 	private String category;
 	private String title;
 	private String writer;
 	private String content;
+
+	private String duedate;
 	private Date regdate;
 	private int cnt;
 	
@@ -41,6 +42,13 @@ public class BoardVO {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getDuedate() {
+		return duedate;
+	}
+	public void setDuedate(String duedate) {
+		this.duedate = duedate;
 	}
 	public Date getRegdate() {
 		return regdate;

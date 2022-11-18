@@ -37,7 +37,7 @@
 </script>
 </head>
 <body>
-<h1>마음의 소리함</h1>
+<h1>To Do List</h1>
 <%
 	BoardDAO boardDAO = new BoardDAO();
 	List<BoardVO> list = boardDAO.getBoardList();
@@ -50,6 +50,7 @@
 	<th>Title</th>
 	<th>Writer</th>
 	<th>Content</th>
+    <th>Duedate</th>
 	<th>Regdate</th>
 	<th>Edit</th>
 	<th>Delete</th>
@@ -61,6 +62,7 @@
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
+        <td>${u.getDuedate()}</td>
 		<td>${u.getRegdate()}</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
